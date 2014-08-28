@@ -27,7 +27,7 @@
 /*colors: 20, 39, 45*/
 
 body {
-	background-color: white;
+	background-color: rgb(253, 253, 253);
 }
 
 img.grayscale {
@@ -35,10 +35,6 @@ img.grayscale {
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
     opacity: 0.3;
-}
-
-.project_title a {
-	color: orange;
 }
 
 .navbar-inverse .navbar-brand {
@@ -59,10 +55,14 @@ img.grayscale {
 	border-bottom: blue;
 }
 
+.anchor {
+	padding: 20px;
+}
+
 #home {
 	background-image: url(../resources/imgs/vsaiwide.jpg);
 	background-repeat:no-repeat;
-	background-size: 100%;
+	background-size: 100%, 80%;
 	background-position: center;
 	min-height: 700px;
 	margin-top: 50px;
@@ -82,13 +82,16 @@ img.grayscale {
 	/*padding: 40px;*/
 }
 
+.project_title a {
+	color: orange;
+}
+
 #projects p {
 	color: white;
 }
 
-
 #contact {
-	background-color: rgb(75, 194, 236);
+	/*background-color: rgb(75, 194, 236);*/
 	min-height: 400px;
 	/*-moz-border-radius: 15px;*/
 	/*border-radius: 15px;*/
@@ -97,10 +100,6 @@ img.grayscale {
 
 #contact h1 {
 	color: white;
-}
-
-.anchor {
-	padding: 20px;
 }
 
 ul#socialMediaIcons {
@@ -128,21 +127,19 @@ ul#socialMediaIcons li:hover {
 	opacity: 1;
 }
 
+/*
 ul#socialMediaIcons li#facebook {
-	/*background: url(../resources/imgs/social_icons.jpg) -83px -6px;*/
 	background: url(../resources/imgs/social_icon-1.jpg) -100px -288px;
 }
 
 ul#socialMediaIcons li#linkedin {
-	/*background-image: url(../resources/imgs/social_icons.jpg);*/
 	background: url(../resources/imgs/social_icons.jpg) -1120px -80px;
 }
 
 ul#socialMediaIcons li#github {
-	/*background-image: url(../resources/imgs/social_icons.jpg);*/
 	background: url(../resources/imgs/social_icons.jpg) -823px -6px;
 }
-
+*/
 
 #footer {
 	padding: 20px;
