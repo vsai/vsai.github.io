@@ -10,7 +10,12 @@
 	</head>
 
 	<body data-spy='scroll' data-target='#yolo'>
-		<script src='js/jquery-1.11.1.min.js'></script>
+        <script src='js/jquery-1.11.1.min.js'></script>
+        <script type="text/javascript">
+            $(function () { 
+                $("[data-toggle='tooltip']").tooltip(); 
+            });
+        </script>
 		<script src='js/bootstrap.min.js'></script>
 
 		<div id='navigation-bar'>
@@ -49,7 +54,12 @@
 						<!-- <div class='col-lg-12' id='about-content'> -->
 						<h1>ABOUT</h1>
 						<p>
-                            Vishalsai Daswani &nbsp;&nbsp;&middot;&nbsp;&nbsp; Graduate &nbsp;&nbsp;&middot&nbsp;&nbsp; <span class='hlite'><a target='_blank' href="http://www.cmu.edu">Carnegie Mellon University</a></span>
+                            Vishalsai Daswani &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                            <!--
+                            <a id='test_popover' href="#" rel="popover" html=true data-content="<img src='resources/imgs/vsai.png'/>">Hover over me for image.</a>
+                            -->
+                            Graduate &nbsp;&nbsp;&middot&nbsp;&nbsp;
+                            <span class='hlite'><a target='_blank' id="cmu_pop_img" rel="popover" href="http://www.cmu.edu" title="CMU WOHOO" data-content='<img src="resources/imgs/vsai.png" />'>Carnegie Mellon University</a></span>
 							<br><br>
 							Double Major &nbsp;&nbsp;&middot;&nbsp;&nbsp; Electrical Computer Engineering &nbsp;&nbsp;&middot;&nbsp;&nbsp; Computer Science
 							<br><br>
@@ -60,7 +70,13 @@
                             <br><br>
 							Dancer &nbsp;&nbsp;&middot;&nbsp;&nbsp; On tabletops &nbsp;&nbsp;&middot;&nbsp;&nbsp; College Team &nbsp;&nbsp;&middot;&nbsp;&nbsp; Bhangra &nbsp;&nbsp;&middot;&nbsp;&nbsp; Competitions &nbsp;&nbsp;&middot;&nbsp;&nbsp; Trophies &nbsp;&nbsp;&middot;&nbsp;&nbsp; Lots of them
 							<br><br>
-							Internships &nbsp;&nbsp;&middot;&nbsp;&nbsp; SF &nbsp;&nbsp;&middot;&nbsp;&nbsp; Uber &nbsp;&nbsp;&middot;&nbsp;&nbsp; NY &nbsp;&nbsp;&middot;&nbsp;&nbsp; Bazaarvoice &nbsp;&nbsp;&middot;&nbsp;&nbsp; HK &nbsp;&nbsp;&middot;&nbsp;&nbsp; TLG Consulting
+                            Internships &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                            SF &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                            <span class='hlite'><a target='_blank' href="http://www.uber.com">Uber</a></span> &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                            NY &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                            <span class='hlite'><a target='_blank' href="http://www.bazaarvoice.com/">Bazaarvoice</a></span> &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                            HK &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                            <span class='hlite'><a target='_blank' href="http://www.lantaugroup.com/">TLG Consulting</a></span>
                             <br><br>
                             Thinker &nbsp;&nbsp;&middot;&nbsp;&nbsp; Night owl &nbsp;&nbsp;&middot;&nbsp;&nbsp; Family guy
 							<!-- Likes. Numbers. Traveling. Soccer. 
@@ -216,6 +232,12 @@
 			</div>
 		</div>
 		<!-- END FOOTER -->
+        <script type="text/javascript">
+            $("#cmu_pop_img").popover({
+                placement: 'top',
+                trigger: "hover",
+                html:true});
+        </script>
 	</body>
 
 </html>
