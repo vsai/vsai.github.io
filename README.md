@@ -1,19 +1,28 @@
 # vishalsaidaswani.com
 
-Personal website for Vishalsai Daswani. Static, no build step — plain HTML/CSS/JS
-served by GitHub Pages.
+Personal website for Vishalsai Daswani. Built with [Jekyll](https://jekyllrb.com/)
+and the [minima](https://github.com/jekyll/minima) theme, hosted on GitHub Pages.
 
-## Files
-- `index.html` — the page (single page: hero, about, work)
-- `styles.css` — all styling (modern gradient, light/dark aware, responsive)
-- `CNAME` — custom domain (`vishalsaidaswani.com`)
-- `.nojekyll` — tells GitHub Pages to serve files as-is (no Jekyll processing)
+## Run locally
 
-## Editing
-Just edit `index.html` / `styles.css` and push to `master`. GitHub Pages
-redeploys automatically. To preview locally, open `index.html` in a browser
-(or run `python3 -m http.server` in this folder).
+```bash
+bundle install        # first time only
+bundle exec jekyll serve --livereload
+```
 
-## History
-The original 2017 version is archived in the private repo
-[`vsai/vsai.github.io-archive`](https://github.com/vsai/vsai.github.io-archive).
+Then open <http://localhost:4000>. Pages rebuild automatically on save.
+
+## Structure
+
+- `index.md` — homepage (about blurb)
+- `work.md` · `projects.md` · `consultancy.md` · `blog.md` · `random.md` — nav pages
+- `_posts/` — blog posts (`YYYY-MM-DD-title.md`)
+- `_config.yml` — site config + nav order (`header_pages`)
+- `_layouts/home.html` — minimal homepage override (no auto post list)
+- `CNAME` — custom domain
+
+## Notes
+
+- Nav order is set by `header_pages` in `_config.yml`.
+- The old 2017 site is archived in private repo
+  [`vsai/vsai.github.io-archive`](https://github.com/vsai/vsai.github.io-archive).

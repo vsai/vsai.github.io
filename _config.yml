@@ -1,0 +1,42 @@
+title: Vishalsai Daswani
+email: hello@vishalsaidaswani.com
+description: >-
+  Entrepreneur and engineer. Product, business strategy, and the systems
+  underneath — most recently in crypto, now in agentic AI for small businesses.
+url: "https://vishalsaidaswani.com"
+baseurl: ""
+
+twitter_username: vsai12
+github_username: vsai
+
+theme: minima
+show_excerpts: false
+
+# Top navigation order (minima 2.5 uses header_pages)
+header_pages:
+  - work.md
+  - projects.md
+  - consultancy.md
+  - blog.md
+  - recommends.md
+
+# Footer social links
+minima:
+  social_links:
+    twitter: vsai12
+    github: vsai
+
+author: Vishalsai Daswani
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Build settings
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+  - .gstack

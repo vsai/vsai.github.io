@@ -1,2 +1,7 @@
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
 .gstack/
 .DS_Store
