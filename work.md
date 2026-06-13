@@ -4,29 +4,233 @@ title: Work
 permalink: /work/
 ---
 
+<style>
+.cv-timeline { position: relative; margin: 2.2rem 0 1rem; padding-left: 30px; }
+.cv-timeline::before {
+  content: ""; position: absolute; left: 7px; top: 10px; bottom: 10px;
+  width: 2px; background: #e7e7e7;
+}
+.cv-item { position: relative; margin-bottom: 20px; }
+.cv-item:last-child { margin-bottom: 0; }
+.cv-dot {
+  position: absolute; left: -29px; top: 24px; width: 14px; height: 14px;
+  border-radius: 50%; background: #2a7ae2; border: 3px solid #fdfdfd;
+  box-shadow: 0 0 0 1px #d6d6d6;
+}
+.cv-card {
+  background: #fff; border: 1px solid #e7e7e7; border-radius: 10px;
+  padding: 18px 20px;
+  transition: box-shadow .2s ease, transform .2s ease, border-color .2s ease;
+}
+.cv-card:hover {
+  box-shadow: 0 8px 24px -10px rgba(0,0,0,.22);
+  border-color: #cfe0f7; transform: translateY(-2px);
+}
+.cv-head {
+  display: flex; justify-content: space-between; align-items: baseline;
+  gap: 12px; flex-wrap: wrap;
+}
+.cv-co { margin: 0; font-size: 1.25rem; line-height: 1.2; }
+.cv-co a { color: #2a7ae2; text-decoration: none; }
+.cv-co a:hover { text-decoration: underline; }
+.cv-dates { color: #828282; font-size: .82rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.cv-role { color: #2a7ae2; font-weight: 600; font-size: .9rem; margin: 3px 0 10px; }
+.cv-lead { margin: 0 0 9px; color: #444; font-weight: 500; }
+.cv-points { margin: 0; padding-left: 1.15rem; color: #3a3a3a; }
+.cv-points li { margin: 5px 0; padding-left: 2px; }
+.cv-topics { margin-top: 14px; display: flex; gap: 7px; flex-wrap: wrap; }
+.cv-topic {
+  font-size: .72rem; color: #2a7ae2; background: #eef4fd;
+  border: 1px solid #dce8fb; border-radius: 999px; padding: 3px 11px;
+}
+.cv-stats { margin-top: 14px; display: flex; gap: 22px; flex-wrap: wrap; }
+.cv-stat { font-size: .8rem; color: #777; line-height: 1.25; }
+.cv-stat b { display: block; color: #1a1a1a; font-weight: 700; font-size: 1.05rem; }
+.cv-tags { margin-top: 13px; display: flex; gap: 7px; flex-wrap: wrap; }
+.cv-tag {
+  display: inline-block; font-size: .72rem; color: #555; background: #f2f2f2;
+  border: 1px solid #ececec; border-radius: 999px; padding: 3px 11px;
+}
+.cv-tag a { color: inherit; text-decoration: none; }
+.cv-tag a:hover { text-decoration: underline; }
+.cv-stack {
+  margin-top: 14px; padding-top: 12px; border-top: 1px solid #f0f0f0;
+  font-size: .73rem; color: #9a9a9a;
+}
+.cv-stack .label { color: #b3b3b3; }
+.cv-stack-light { display: block; margin-top: 4px; color: #bdbdbd; }
+.cv-writing { margin-top: 14px; }
+.cv-writing summary {
+  cursor: pointer; font-size: .8rem; color: #2a7ae2; font-weight: 600;
+  list-style: none; display: inline-flex; align-items: center; gap: 7px;
+  user-select: none; padding: 2px 0;
+}
+.cv-writing summary::-webkit-details-marker { display: none; }
+.cv-writing summary::before {
+  content: "›"; display: inline-block; font-size: 1.15em; line-height: 1;
+  transition: transform .15s ease;
+}
+.cv-writing[open] summary::before { transform: rotate(90deg); }
+.cv-writing-count {
+  background: #eaf2fd; color: #2a7ae2; border-radius: 999px;
+  font-size: .68rem; padding: 1px 8px; font-weight: 700;
+}
+.cv-writing-list {
+  margin: 9px 0 0; padding: 0; list-style: none;
+  max-height: 128px; overflow-y: auto;
+}
+.cv-writing-list li { margin: 0 0 2px; }
+.cv-writing-list li a {
+  display: block; padding: 6px 10px; border-radius: 6px; font-size: .85rem;
+  color: #3a3a3a; text-decoration: none; transition: background .15s ease, color .15s ease;
+}
+.cv-writing-list li a:hover { background: #f4f8fe; color: #2a7ae2; }
+@media (max-width: 600px) {
+  .cv-head { flex-direction: column; gap: 2px; }
+  .cv-stats { gap: 16px; }
+}
+</style>
+
 A short history of where I've worked and what I built.
 
-### BonkBot — Engineering Manager
-*Nov 2024 – Jun 2026*
+<div class="cv-timeline" markdown="0">
 
-Lead engineering on low-latency trading platforms for high-volume memecoin
-markets, where milliseconds and uptime are the product.
+  <div class="cv-item">
+    <span class="cv-dot"></span>
+    <div class="cv-card">
+      <div class="cv-head">
+        <h3 class="cv-co"><a href="https://bonkbot.io" target="_blank" rel="noopener">BONKbot</a></h3>
+        <span class="cv-dates">Nov 2024 — Jun 2026</span>
+      </div>
+      <div class="cv-role">Senior Staff Engineer &amp; Engineering Manager</div>
+      <p class="cv-lead">A Solana memecoin trading platform on Telegram and web.</p>
+      <ul class="cv-points">
+        <li>Both led and built — managed a team of four while owning core systems hands-on.</li>
+        <li>Owned the Telegram bot, web user API, authentication, infrastructure, and the swap and portfolio/PnL paths.</li>
+        <li>Project lead for Multiwallet v1.</li>
+        <li>Led Auth v2 — passkey authentication integrated with our proprietary signer.</li>
+        <li>Drove an observability and team-structure push that cut swap latency (p50 1.1s&nbsp;→&nbsp;0.8s, p90 1.5s&nbsp;→&nbsp;1.1s) and portfolio/PnL latency (p90 5.3s&nbsp;→&nbsp;3.8s).</li>
+        <li>Also shipped referrals, internal tooling, and more.</li>
+      </ul>
+      <div class="cv-topics">
+        <span class="cv-topic">low-latency trading</span>
+        <span class="cv-topic">observability</span>
+        <span class="cv-topic">passkey auth</span>
+        <span class="cv-topic">multiwallet</span>
+        <span class="cv-topic">infra</span>
+      </div>
+      <div class="cv-stats">
+        <span class="cv-stat"><b>~1.5M</b> lifetime users</span>
+        <span class="cv-stat"><b>~$1B</b> peak monthly volume</span>
+        <span class="cv-stat"><b>−27%</b> swap latency (p90)</span>
+      </div>
+      {%- assign bonkbot_posts = site.posts | where: "company", "bonkbot" -%}
+      {%- if bonkbot_posts.size > 0 -%}
+      <details class="cv-writing">
+        <summary>Writing from this chapter <span class="cv-writing-count">{{ bonkbot_posts.size }}</span></summary>
+        <ul class="cv-writing-list">
+          {%- for post in bonkbot_posts -%}
+          <li><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
+          {%- endfor -%}
+        </ul>
+      </details>
+      {%- endif -%}
+      <div class="cv-stack">
+        TypeScript · Node.js · Postgres · GCP · Claude&nbsp;Code · Codex
+        <span class="cv-stack-light"><span class="label">Some exposure:</span> ClickHouse</span>
+      </div>
+    </div>
+  </div>
 
-### Cega — Founding Engineer
-*Aug 2022 – Nov 2024 · acquired by BonkBot*
+  <div class="cv-item">
+    <span class="cv-dot"></span>
+    <div class="cv-card">
+      <div class="cv-head">
+        <h3 class="cv-co">Cega</h3>
+        <span class="cv-dates">Aug 2022 — Nov 2024</span>
+      </div>
+      <div class="cv-role">Founding Engineer · First full-time hire</div>
+      <p class="cv-lead">On-chain tokenized structured option products — Fixed Coupon Notes, Dual Currency Swaps, and Shark Fin notes.</p>
+      <ul class="cv-points">
+        <li>Architected and shipped the v1 EVM smart contracts.</li>
+        <li>Owned the backend operational and settlement layers.</li>
+        <li>Sole developer of all on-chain contract indexers.</li>
+        <li>Built the PnL engine for the Pendle integration — staking yields on SY tokens held in our vaults, via a sliding-window model forked from SY's on-chain yield logic.</li>
+      </ul>
+      <div class="cv-topics">
+        <span class="cv-topic">DeFi</span>
+        <span class="cv-topic">structured products</span>
+        <span class="cv-topic">EVM contracts</span>
+        <span class="cv-topic">on-chain indexers</span>
+      </div>
+      <div class="cv-stats">
+        <span class="cv-stat"><b>~$45M</b> peak TVL</span>
+        <span class="cv-stat"><b>0 → 1</b> built from scratch</span>
+      </div>
+      <div class="cv-tags"><span class="cv-tag">Acquired by BONKbot</span></div>
+      <div class="cv-stack">
+        TypeScript · Node.js · Solidity · Supabase · React
+        <span class="cv-stack-light"><span class="label">Some exposure:</span> Rust (Solana)</span>
+      </div>
+    </div>
+  </div>
 
-Architected the backend and designed the v1 on-chain smart contracts for
-structured DeFi products, from zero to a live protocol.
+  <div class="cv-item">
+    <span class="cv-dot"></span>
+    <div class="cv-card">
+      <div class="cv-head">
+        <h3 class="cv-co">MyPropty</h3>
+        <span class="cv-dates">Dec 2017 — May 2022</span>
+      </div>
+      <div class="cv-role">Founder &amp; CTO</div>
+      <p class="cv-lead">Property-management software for small and mid-size landlords in Hong Kong.</p>
+      <ul class="cv-points">
+        <li>Founded the company and ran engineering as CTO, building the product end-to-end.</li>
+        <li>Drove sales and business development too — not just the technical side.</li>
+        <li>Still in production today, managing ~40 properties.</li>
+      </ul>
+      <div class="cv-topics">
+        <span class="cv-topic">proptech</span>
+        <span class="cv-topic">0→1</span>
+        <span class="cv-topic">sales &amp; BD</span>
+      </div>
+      <div class="cv-stats">
+        <span class="cv-stat"><b>~$200M</b> peak property value on platform</span>
+        <span class="cv-stat"><b>~40</b> properties live today</span>
+      </div>
+      <div class="cv-tags">
+        <span class="cv-tag"><a href="https://www.cyberport.hk/en/about_cyberport/entrepreneurship/cyberport_incubation_programme" target="_blank" rel="noopener">Cyberport Incubation Programme ↗</a></span>
+        <span class="cv-tag">Still running</span>
+      </div>
+      <div class="cv-stack">Ruby on Rails · React · Postgres</div>
+    </div>
+  </div>
 
-### MyPropty — Founder & CTO
-*Dec 2017 – May 2022 · incubated by Cyberport*
+  <div class="cv-item">
+    <span class="cv-dot"></span>
+    <div class="cv-card">
+      <div class="cv-head">
+        <h3 class="cv-co">Cisco Meraki</h3>
+        <span class="cv-dates">Aug 2014 — Jan 2017</span>
+      </div>
+      <div class="cv-role">Security Appliance Team</div>
+      <p class="cv-lead">On the MX security-appliance team.</p>
+      <ul class="cv-points">
+        <li>Co-invented and built an uplink-monitoring system — a sliding-window monitor that let MX owners catch uplink latency and connectivity issues.</li>
+        <li>Spanned the stack: C++ components on the device, a Rails backend, a React frontend, and Scala collectors polling connection data.</li>
+        <li>Also worked across firewall configuration and other app-level features.</li>
+      </ul>
+      <div class="cv-topics">
+        <span class="cv-topic">firewall</span>
+        <span class="cv-topic">uplink monitoring</span>
+        <span class="cv-topic">networking</span>
+      </div>
+      <div class="cv-tags"><span class="cv-tag"><a href="https://patents.google.com/patent/WO2016182772A1/es" target="_blank" rel="noopener">Patent WO2016182772A1 ↗</a></span></div>
+      <div class="cv-stack">
+        Ruby on Rails · React · Postgres
+        <span class="cv-stack-light"><span class="label">Some exposure:</span> C++ · Scala</span>
+      </div>
+    </div>
+  </div>
 
-Founded and led engineering for a platform that helped small-to-medium
-landlords manage their real estate end-to-end.
-
-### Cisco Meraki — Security Appliance Team
-*Aug 2014 – Jan 2017*
-
-Built features for Meraki's security appliances and co-invented a patented
-method for uplink monitoring
-([WO2016182772A1](https://patents.google.com/patent/WO2016182772A1/es)).
+</div>
