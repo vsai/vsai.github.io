@@ -1,0 +1,113 @@
+---
+layout: default
+---
+<div class="post-layout" id="post-layout">
+
+  <aside class="post-toc" aria-label="Table of contents">
+    <div class="post-toc-inner">
+      <p class="post-toc-title">On this page</p>
+      <nav class="post-toc-nav" id="post-toc-nav"></nav>
+    </div>
+  </aside>
+
+  <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header class="post-header">
+      <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+      <p class="post-meta">
+        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          {{ page.date | date: date_format }}
+        </time>
+        {%- if page.author -%}
+          • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+        {%- endif -%}
+      </p>
+    </header>
+
+    <div class="post-content e-content" itemprop="articleBody">
+      {{ content }}
+    </div>
+
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+  </article>
+</div>
+
+<script>
+  (function () {
+    var content = document.querySelector('.post-content');
+    var nav = document.getElementById('post-toc-nav');
+    var layout = document.getElementById('post-layout');
+    if (!content || !nav || !layout) return;
+
+    var headings = Array.prototype.slice.call(content.querySelectorAll('h2, h3'));
+
+    // Not enough structure to warrant a TOC — collapse to a single column.
+    if (headings.length < 2) {
+      layout.classList.add('no-toc');
+      return;
+    }
+
+    function slugify(text) {
+      return text.toLowerCase().trim()
+        .replace(/[^\w\s-]/g, '')
+        .replace(/\s+/g, '-');
+    }
+
+    var used = {};
+    var links = [];
+
+    headings.forEach(function (h) {
+      // Kramdown usually adds ids already; generate a unique fallback if not.
+      var id = h.id;
+      if (!id) {
+        id = slugify(h.textContent) || 'section';
+        var base = id, n = 1;
+        while (used[id] || document.getElementById(id)) { id = base + '-' + (n++); }
+        h.id = id;
+      }
+      used[id] = true;
+
+      var a = document.createElement('a');
+      a.href = '#' + id;
+      a.textContent = h.textContent;
+      a.className = 'toc-lvl-' + (h.tagName === 'H3' ? '3' : '2');
+      a.dataset.target = id;
+      nav.appendChild(a);
+      links.push(a);
+    });
+
+    // Scroll-spy: highlight the heading nearest the top of the viewport.
+    var byId = {};
+    links.forEach(function (a) { byId[a.dataset.target] = a; });
+    var current = null;
+
+    function setActive(a) {
+      if (current === a) return;
+      if (current) current.classList.remove('active');
+      if (a) a.classList.add('active');
+      current = a;
+    }
+
+    if ('IntersectionObserver' in window) {
+      var visible = {};
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          visible[e.target.id] = e.isIntersecting;
+        });
+        // Pick the first heading (document order) currently in the band.
+        for (var i = 0; i < headings.length; i++) {
+          if (visible[headings[i].id]) { setActive(byId[headings[i].id]); return; }
+        }
+      }, { rootMargin: '-80px 0px -70% 0px', threshold: 0 });
+
+      headings.forEach(function (h) { observer.observe(h); });
+    }
+
+    // Make sure a click highlights immediately, even before scroll settles.
+    nav.addEventListener('click', function (e) {
+      var a = e.target.closest('a');
+      if (a) setActive(a);
+    });
+  })();
+</script>

@@ -1,0 +1,105 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+// ===========================================================================
+// Blog post layout with a sticky table-of-contents sidebar
+// ===========================================================================
+
+// Smooth anchor jumps from the TOC.
+html {
+  scroll-behavior: smooth;
+}
+
+// The post layout is wider than the default .wrapper. We center it on the
+// viewport (not the wrapper) so the TOC can live in the left gutter while the
+// article keeps a comfortable reading width. The wrapper does not clip
+// overflow, so breaking out of it like this is safe.
+.post-layout {
+  width: min(1040px, 94vw);
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: 220px minmax(0, 720px);
+  justify-content: center;
+  gap: 56px;
+}
+
+// When a post has too few headings to bother with a TOC, the article stands
+// alone at the normal reading width.
+.post-layout.no-toc {
+  width: auto;
+  margin-left: auto;
+  transform: none;
+  display: block;
+  max-width: 740px;
+}
+
+// ---- The sidebar --------------------------------------------------------
+.post-toc-inner {
+  position: sticky;
+  top: 90px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+
+.post-toc-title {
+  margin: 0 0 10px;
+  padding-left: 14px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: $grey-color;
+}
+
+.post-toc-nav a {
+  display: block;
+  padding: 5px 0 5px 14px;
+  border-left: 2px solid $grey-color-light;
+  color: $grey-color-dark;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.35;
+  transition: color 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    color: $brand-color;
+  }
+
+  &.active {
+    color: $brand-color;
+    border-left-color: $brand-color;
+    font-weight: 600;
+  }
+
+  // Nested (h3) entries sit indented under their h2.
+  &.toc-lvl-3 {
+    padding-left: 28px;
+    font-size: 13px;
+  }
+}
+
+// Keep headings clear of the fixed-ish top when jumped to via the TOC.
+.post-content {
+  h2, h3 {
+    scroll-margin-top: 90px;
+  }
+}
+
+// ---- Responsive: drop the sidebar on narrower screens -------------------
+@include media-query(1024px) {
+  .post-layout {
+    width: auto;
+    margin-left: auto;
+    transform: none;
+    display: block;
+    max-width: 740px;
+  }
+
+  .post-toc {
+    display: none;
+  }
+}
