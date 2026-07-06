@@ -1,0 +1,164 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "text", "id": "title", "x": 80, "y": 36, "width": 700, "height": 36,
+      "text": "The accrual identity for one window", "originalText": "The accrual identity for one window",
+      "fontSize": 28, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300001, "version": 1, "versionNonce": 300002, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "subtitle", "x": 80, "y": 80, "width": 800, "height": 22,
+      "text": "What accrued during the window, whether or not anyone claimed.",
+      "originalText": "What accrued during the window, whether or not anyone claimed.",
+      "fontSize": 16, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300003, "version": 1, "versionNonce": 300004, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+
+    {
+      "type": "rectangle", "id": "after", "x": 90, "y": 168, "width": 380, "height": 66,
+      "strokeColor": "#047857", "backgroundColor": "#a7f3d0", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300010, "version": 1, "versionNonce": 300011, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "after_t", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "after_t", "x": 106, "y": 180, "width": 348, "height": 42,
+      "text": "AFTER\npool balance at end (on a fork)", "originalText": "AFTER\npool balance at end (on a fork)",
+      "fontSize": 15, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300012, "version": 1, "versionNonce": 300013, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "after", "lineHeight": 1.25
+    },
+
+    {
+      "type": "rectangle", "id": "during", "x": 90, "y": 262, "width": 380, "height": 66,
+      "strokeColor": "#b45309", "backgroundColor": "#fef3c7", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300020, "version": 1, "versionNonce": 300021, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "during_t", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "during_t", "x": 106, "y": 274, "width": 348, "height": 42,
+      "text": "DURING\nclaims that left the pool (add back)", "originalText": "DURING\nclaims that left the pool (add back)",
+      "fontSize": 15, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#7c2d12", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300022, "version": 1, "versionNonce": 300023, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "during", "lineHeight": 1.25
+    },
+
+    {
+      "type": "rectangle", "id": "before", "x": 90, "y": 356, "width": 380, "height": 66,
+      "strokeColor": "#c2410c", "backgroundColor": "#fed7aa", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300030, "version": 1, "versionNonce": 300031, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "before_t", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "before_t", "x": 106, "y": 368, "width": 348, "height": 42,
+      "text": "BEFORE\npool balance at start (reused)", "originalText": "BEFORE\npool balance at start (reused)",
+      "fontSize": 15, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#7c2d12", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300032, "version": 1, "versionNonce": 300033, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "before", "lineHeight": 1.25
+    },
+
+    {
+      "type": "text", "id": "plus1", "x": 540, "y": 184, "width": 30, "height": 36,
+      "text": "+", "originalText": "+",
+      "fontSize": 30, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#334155", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300040, "version": 1, "versionNonce": 300041, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "plus2", "x": 540, "y": 277, "width": 30, "height": 36,
+      "text": "+", "originalText": "+",
+      "fontSize": 30, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#334155", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300042, "version": 1, "versionNonce": 300043, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "minus", "x": 538, "y": 376, "width": 34, "height": 36,
+      "text": "−", "originalText": "−",
+      "fontSize": 32, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#334155", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300044, "version": 1, "versionNonce": 300045, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+
+    {
+      "type": "arrow", "id": "ar_after", "x": 472, "y": 201, "width": 218, "height": 64,
+      "strokeColor": "#94a3b8", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300050, "version": 1, "versionNonce": 300051, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [120, 12], [218, 64]],
+      "startBinding": {"elementId": "after", "focus": 0, "gap": 4}, "endBinding": {"elementId": "sum", "focus": 0, "gap": 4},
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow", "id": "ar_during", "x": 472, "y": 295, "width": 218, "height": 4,
+      "strokeColor": "#94a3b8", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300052, "version": 1, "versionNonce": 300053, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [218, 4]],
+      "startBinding": {"elementId": "during", "focus": 0, "gap": 4}, "endBinding": {"elementId": "sum", "focus": 0, "gap": 4},
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow", "id": "ar_before", "x": 472, "y": 389, "width": 218, "height": 56,
+      "strokeColor": "#94a3b8", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300054, "version": 1, "versionNonce": 300055, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [120, -8], [218, -56]],
+      "startBinding": {"elementId": "before", "focus": 0, "gap": 4}, "endBinding": {"elementId": "sum", "focus": 0, "gap": 4},
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+
+    {
+      "type": "ellipse", "id": "sum", "x": 690, "y": 218, "width": 250, "height": 150,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid",
+      "strokeWidth": 2.5, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300060, "version": 1, "versionNonce": 300061, "isDeleted": false,
+      "groupIds": [], "boundElements": [{"id": "sum_t", "type": "text"}], "link": null, "locked": false
+    },
+    {
+      "type": "text", "id": "sum_t", "x": 712, "y": 270, "width": 206, "height": 46,
+      "text": "accrued during\nthis window", "originalText": "accrued during\nthis window",
+      "fontSize": 19, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300062, "version": 1, "versionNonce": 300063, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": "sum", "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "caption", "x": 660, "y": 384, "width": 310, "height": 22,
+      "text": "DURING  +  AFTER  −  BEFORE", "originalText": "DURING  +  AFTER  −  BEFORE",
+      "fontSize": 15, "fontFamily": 3, "textAlign": "center", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300064, "version": 1, "versionNonce": 300065, "isDeleted": false,
+      "groupIds": [], "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    }
+  ],
+  "appState": {"viewBackgroundColor": "#ffffff", "gridSize": 20},
+  "files": {}
+}

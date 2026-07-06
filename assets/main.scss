@@ -87,6 +87,17 @@ html {
   h2, h3 {
     scroll-margin-top: 90px;
   }
+
+  // Diagrams (exported from Excalidraw) sit as full-width figures with a
+  // light frame so they read as distinct from the prose.
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 2em auto;
+    border: 1px solid #eef0f2;
+    border-radius: 8px;
+  }
 }
 
 // ---- Responsive: drop the sidebar on narrower screens -------------------

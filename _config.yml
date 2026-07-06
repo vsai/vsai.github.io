@@ -40,3 +40,5 @@ exclude:
   - vendor
   - README.md
   - .gstack
+  - PENDLE_SY_PNL.md
+  - "assets/diagrams/*.excalidraw"
