@@ -114,3 +114,71 @@ html {
     display: none;
   }
 }
+
+// ===========================================================================
+// Consultancy page: service packages as cards, grouped by section
+// ===========================================================================
+
+.consulting-section {
+  margin-top: $spacing-unit * 1.4;
+
+  h2 {
+    margin-bottom: 6px;
+  }
+}
+
+.consulting-section-blurb {
+  margin-top: 0;
+  margin-bottom: $spacing-unit * 0.7;
+  color: $grey-color-dark;
+}
+
+.consulting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.consulting-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  border: 1px solid $grey-color-light;
+  border-radius: 10px;
+  background-color: $background-color;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    border-color: $brand-color;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  }
+
+  h3 {
+    margin: 0 0 4px;
+    @include relative-font-size(1.1);
+  }
+}
+
+.consulting-price {
+  margin: 0 0 12px;
+  font-size: $small-font-size;
+  font-weight: 600;
+  color: $brand-color;
+}
+
+.consulting-blurb {
+  flex-grow: 1;
+  margin: 0 0 20px;
+  color: $grey-color-dark;
+}
+
+.consulting-cta {
+  align-self: flex-start;
+  font-weight: 600;
+}
+
+.consulting-footer-note {
+  margin-top: $spacing-unit * 1.4;
+  padding-top: $spacing-unit * 0.7;
+  border-top: 1px solid $grey-color-light;
+}

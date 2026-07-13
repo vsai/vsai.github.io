@@ -12,9 +12,9 @@ sections:
         name: Fractional CTO Advisory Call
         price_display: "$280 · 60 minutes"
         blurb: >-
-          A focused working session on whatever's most pressing — architecture, hiring,
-          fundraising narrative, go-to-market, or a technical decision you're stuck on.
-          You'll leave with concrete next steps.
+          One hour on whatever's blocking you — architecture, hiring, fundraising, a
+          stuck technical call. You bring the problem, we work it live. You leave with
+          a decision, an action plan, and expected KPIs.
         cta_label: "Book a call →"
         payment_link: "https://buy.stripe.com/9B64gyahC6s63vb5NW3wQ02"
 
@@ -25,9 +25,10 @@ sections:
         name: AI Workflow Lab
         price_display: "$998 · 3 hours"
         blurb: >-
-          A hands-on, three-hour lab for your team. We map a real workflow, build AI and
-          agentic automations against your own stack, and leave you with patterns you can
-          keep using. Everyone builds something live.
+          Three hours, hands-on, with your team. We pick one real process from your
+          business and build the AI workflow for it together, live, on your own stack.
+          Outcome: your team leaves able to build the next one themselves — no
+          dependency on me.
         cta_label: "Book the lab →"
         payment_link: "https://buy.stripe.com/dRm14m3TeaIm5Djeks3wQ00"
 
@@ -35,9 +36,9 @@ sections:
         name: AI Workflow Engine
         price_display: "$1,490 · fixed scope"
         blurb: >-
-          I build a working AI workflow for one real process in your business — scoped,
-          built, and handed over running, with the prompts and tooling documented so your
-          team can operate and extend it.
+          I scope one real process in your business and build the production AI
+          workflow for it myself, end to end. Handed over running, with prompts and
+          tooling documented so your team can operate and extend it.
         cta_label: "Get started →"
         payment_link: "https://buy.stripe.com/bJe5kCgG0dUyghX4JS3wQ01"
 
@@ -48,9 +49,9 @@ sections:
         name: Technical Due Diligence
         price_display: "Custom · ~1 week"
         blurb: >-
-          An independent review of a team's codebase, architecture, and engineering
-          practices — written up as a clear, decision-ready report. Useful before an
-          investment, acquisition, or major build.
+          I review the codebase, architecture, and how the team actually ships —
+          firsthand, over about a week. You get a clear, decision-ready report: what's
+          solid, what's not, and what it means for your call.
         cta_label: "Get in touch →"
         cta_subject: "Technical Due Diligence"
 
@@ -58,7 +59,8 @@ sections:
         name: Fractional CTO
         price_display: ""
         blurb: >-
-          Ongoing engineering leadership for early teams — technical direction, unblocking
-          the build, and raising the bar on how you ship.
+          I plug in as your CTO — setting technical direction, unblocking the build,
+          reviewing what ships. Ongoing, week over week, not a one-off project. You get
+          a senior technical partner without a full-time hire.
         cta_label: "Enquire →"
         cta_subject: "Fractional CTO"
