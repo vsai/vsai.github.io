@@ -1,0 +1,64 @@
+# Consulting packages rendered by consultancy.md, grouped into sections.
+#
+# Paid package: paste its Stripe Payment Link (https://buy.stripe.com/...) into
+#   `payment_link`. Package without a payment_link falls back to an email CTA
+#   (mailto with `cta_subject`). Leave `price_display` blank to hide the price line.
+
+sections:
+  - title: Advisory
+    blurb: A focused, senior read on the decision in front of you.
+    packages:
+      - id: fractional-cto-advisory-call
+        name: Fractional CTO Advisory Call
+        price_display: "$280 · 60 minutes"
+        blurb: >-
+          A focused working session on whatever's most pressing — architecture, hiring,
+          fundraising narrative, go-to-market, or a technical decision you're stuck on.
+          You'll leave with concrete next steps.
+        cta_label: "Book a call →"
+        payment_link: "https://buy.stripe.com/9B64gyahC6s63vb5NW3wQ02"
+
+  - title: Practical AI
+    blurb: Get AI working in your business — from a hands-on team session to a built system.
+    packages:
+      - id: ai-workflow-lab
+        name: AI Workflow Lab
+        price_display: "$998 · 3 hours"
+        blurb: >-
+          A hands-on, three-hour lab for your team. We map a real workflow, build AI and
+          agentic automations against your own stack, and leave you with patterns you can
+          keep using. Everyone builds something live.
+        cta_label: "Book the lab →"
+        payment_link: "https://buy.stripe.com/dRm14m3TeaIm5Djeks3wQ00"
+
+      - id: ai-workflow-engine
+        name: AI Workflow Engine
+        price_display: "$1,490 · fixed scope"
+        blurb: >-
+          I build a working AI workflow for one real process in your business — scoped,
+          built, and handed over running, with the prompts and tooling documented so your
+          team can operate and extend it.
+        cta_label: "Get started →"
+        payment_link: "https://buy.stripe.com/bJe5kCgG0dUyghX4JS3wQ01"
+
+  - title: Long-term
+    blurb: Deeper engagements — a full review, or an ongoing hand on the technical tiller.
+    packages:
+      - id: technical-due-diligence
+        name: Technical Due Diligence
+        price_display: "Custom · ~1 week"
+        blurb: >-
+          An independent review of a team's codebase, architecture, and engineering
+          practices — written up as a clear, decision-ready report. Useful before an
+          investment, acquisition, or major build.
+        cta_label: "Get in touch →"
+        cta_subject: "Technical Due Diligence"
+
+      - id: fractional-cto
+        name: Fractional CTO
+        price_display: ""
+        blurb: >-
+          Ongoing engineering leadership for early teams — technical direction, unblocking
+          the build, and raising the bar on how you ship.
+        cta_label: "Enquire →"
+        cta_subject: "Fractional CTO"
