@@ -225,13 +225,14 @@ A short history of where I've worked and what I built.
         <span class="cv-dates">Aug 2014 — Jan 2017</span>
       </div>
       <div class="cv-role">Security Appliance Team</div>
-      <p class="cv-lead">On the MX security-appliance team.</p>
+      <p class="cv-lead">On the MX security-appliance team, part of Meraki's cloud-managed networking platform — devices that phone home to a central dashboard for configuration, monitoring, and firmware, instead of being managed box by box.</p>
       <ul class="cv-points">
-        <li>Co-invented and built an uplink-monitoring system — a sliding-window monitor that let MX owners catch uplink latency and connectivity issues.</li>
-        <li>Spanned the stack: C++ components on the device, a Rails backend, a React frontend, and Scala collectors polling connection data.</li>
+        <li>Co-invented and built an uplink-monitoring system — a sliding-window monitor that let MX owners catch uplink latency and connectivity issues from the cloud dashboard.</li>
+        <li>Spanned the stack: C++ components on the device, a Rails backend, a React frontend, and Scala collectors polling connection data from fleets of deployed appliances.</li>
         <li>Also worked across firewall configuration and other app-level features.</li>
       </ul>
       <div class="cv-topics">
+        <span class="cv-topic">cloud-managed infra</span>
         <span class="cv-topic">firewall</span>
         <span class="cv-topic">uplink monitoring</span>
         <span class="cv-topic">networking</span>
