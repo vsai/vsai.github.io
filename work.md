@@ -168,6 +168,17 @@ A short history of where I've worked and what I built.
         <span class="cv-stat"><b>0 → 1</b> built from scratch</span>
       </div>
       <div class="cv-tags"><span class="cv-tag">Acquired by BONKbot</span></div>
+      {%- assign cega_posts = site.posts | where: "company", "cega" -%}
+      {%- if cega_posts.size > 0 -%}
+      <details class="cv-writing">
+        <summary>Writing from this chapter <span class="cv-writing-count">{{ cega_posts.size }}</span></summary>
+        <ul class="cv-writing-list">
+          {%- for post in cega_posts -%}
+          <li><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
+          {%- endfor -%}
+        </ul>
+      </details>
+      {%- endif -%}
       <div class="cv-stack">
         TypeScript · Node.js · Solidity · Supabase · React
         <span class="cv-stack-light"><span class="label">Some exposure:</span> Rust (Solana)</span>
