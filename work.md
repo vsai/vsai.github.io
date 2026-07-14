@@ -213,6 +213,17 @@ A short history of where I've worked and what I built.
         <span class="cv-tag"><a href="https://www.cyberport.hk/en/about_cyberport/entrepreneurship/cyberport_incubation_programme" target="_blank" rel="noopener">Cyberport Incubation Programme ↗</a></span>
         <span class="cv-tag">Still running</span>
       </div>
+      {%- assign mypropty_posts = site.posts | where: "company", "mypropty" -%}
+      {%- if mypropty_posts.size > 0 -%}
+      <details class="cv-writing">
+        <summary>Writing from this chapter <span class="cv-writing-count">{{ mypropty_posts.size }}</span></summary>
+        <ul class="cv-writing-list">
+          {%- for post in mypropty_posts -%}
+          <li><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
+          {%- endfor -%}
+        </ul>
+      </details>
+      {%- endif -%}
       <div class="cv-stack">Ruby on Rails · React · Postgres</div>
     </div>
   </div>
