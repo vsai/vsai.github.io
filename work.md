@@ -61,10 +61,13 @@ permalink: /work/
 .cv-stack-light { display: block; margin-top: 4px; color: #bdbdbd; }
 .cv-writing { margin-top: 14px; }
 .cv-writing summary {
-  cursor: pointer; font-size: .8rem; color: #2a7ae2; font-weight: 600;
-  list-style: none; display: inline-flex; align-items: center; gap: 7px;
-  user-select: none; padding: 2px 0;
+  cursor: pointer; font-size: .78rem; color: #2a7ae2; font-weight: 700;
+  list-style: none; display: inline-flex; align-items: center; gap: 6px;
+  user-select: none; padding: 5px 12px; border-radius: 999px;
+  background: #eef4fd; border: 1px solid #dce8fb;
+  transition: background .15s ease, border-color .15s ease;
 }
+.cv-writing summary:hover { background: #e2edfb; border-color: #c7dcf5; }
 .cv-writing summary::-webkit-details-marker { display: none; }
 .cv-writing summary::before {
   content: "›"; display: inline-block; font-size: 1.15em; line-height: 1;
@@ -144,7 +147,7 @@ A short history of where I've worked and what I built.
       </div>
       {%- assign bonkbot_posts = site.posts | where: "company", "bonkbot" -%}
       {%- if bonkbot_posts.size > 0 -%}
-      <details class="cv-writing">
+      <details class="cv-writing" open>
         <summary>Writing from this chapter <span class="cv-writing-count">{{ bonkbot_posts.size }}</span></summary>
         <ul class="cv-writing-list">
           {%- for post in bonkbot_posts -%}
@@ -188,7 +191,7 @@ A short history of where I've worked and what I built.
       <div class="cv-tags"><span class="cv-tag">Acquired by BONKbot</span></div>
       {%- assign cega_posts = site.posts | where: "company", "cega" -%}
       {%- if cega_posts.size > 0 -%}
-      <details class="cv-writing">
+      <details class="cv-writing" open>
         <summary>Writing from this chapter <span class="cv-writing-count">{{ cega_posts.size }}</span></summary>
         <ul class="cv-writing-list">
           {%- for post in cega_posts -%}
@@ -233,7 +236,7 @@ A short history of where I've worked and what I built.
       </div>
       {%- assign mypropty_posts = site.posts | where: "company", "mypropty" -%}
       {%- if mypropty_posts.size > 0 -%}
-      <details class="cv-writing">
+      <details class="cv-writing" open>
         <summary>Writing from this chapter <span class="cv-writing-count">{{ mypropty_posts.size }}</span></summary>
         <ul class="cv-writing-list">
           {%- for post in mypropty_posts -%}
@@ -246,6 +249,10 @@ A short history of where I've worked and what I built.
         <a class="cv-video-card" href="https://www.youtube.com/watch?v=WvxhmEismCQ" target="_blank" rel="noopener">
           <div class="cv-video-thumb"><img src="https://img.youtube.com/vi/WvxhmEismCQ/hqdefault.jpg" alt="MyPropty platform preview video thumbnail" loading="lazy"></div>
           <div class="cv-video-title">MyPropty — Platform Preview</div>
+        </a>
+        <a class="cv-video-card" href="https://www.youtube.com/shorts/5ekSMAAlxhg" target="_blank" rel="noopener">
+          <div class="cv-video-thumb"><img src="https://img.youtube.com/vi/5ekSMAAlxhg/hqdefault.jpg" alt="MyPropty WhatsApp assistant video thumbnail" loading="lazy"></div>
+          <div class="cv-video-title">MyPropty — WhatsApp Assistant</div>
         </a>
         <a class="cv-video-card" href="https://www.youtube.com/watch?v=7F8-GMygQk4" target="_blank" rel="noopener">
           <div class="cv-video-thumb"><img src="https://img.youtube.com/vi/7F8-GMygQk4/hqdefault.jpg" alt="The Cloud technology consultant video thumbnail" loading="lazy"></div>
