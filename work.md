@@ -124,7 +124,7 @@ A short history of where I've worked and what I built.
         <span class="cv-dates">Nov 2024 — Jun 2026</span>
       </div>
       <div class="cv-role">Senior Staff Engineer &amp; Engineering Manager</div>
-      <p class="cv-lead">A Solana memecoin trading platform on Telegram and web.</p>
+      <p class="cv-lead">Building a low-latency, on-chain crypto trading platform for Solana memecoins on Telegram and web.</p>
       <ul class="cv-points">
         <li>Both led and built — owned core systems hands-on while managing the team behind the platform that drives 80% of revenue.</li>
         <li>Owned the Telegram bot, web user API, authentication, infrastructure, the swap execution layer, and portfolio/PnL paths.</li>
