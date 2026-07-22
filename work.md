@@ -126,8 +126,8 @@ A short history of where I've worked and what I built.
       <div class="cv-role">Senior Staff Engineer &amp; Engineering Manager</div>
       <p class="cv-lead">A Solana memecoin trading platform on Telegram and web.</p>
       <ul class="cv-points">
-        <li>Both led and built — managed a team of four while owning core systems hands-on.</li>
-        <li>Owned the Telegram bot, web user API, authentication, infrastructure, and the swap and portfolio/PnL paths.</li>
+        <li>Both led and built — owned core systems hands-on while managing the team behind the platform that drives 80% of revenue.</li>
+        <li>Owned the Telegram bot, web user API, authentication, infrastructure, the swap execution layer, and portfolio/PnL paths.</li>
         <li>Project lead for Multiwallet v1.</li>
         <li>Led Auth v2 — passkey authentication integrated with our proprietary signer.</li>
         <li>Drove an observability and team-structure push that cut swap latency (p50 1.1s&nbsp;→&nbsp;0.8s, p90 1.5s&nbsp;→&nbsp;1.1s) and portfolio/PnL latency (p90 5.3s&nbsp;→&nbsp;3.8s).</li>
