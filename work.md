@@ -85,6 +85,24 @@ permalink: /work/
   color: #3a3a3a; text-decoration: none; transition: background .15s ease, color .15s ease;
 }
 .cv-writing-list li a:hover { background: #f4f8fe; color: #2a7ae2; }
+.cv-videos { margin-top: 14px; display: flex; gap: 10px; flex-wrap: wrap; }
+.cv-video-card { display: block; width: 132px; text-decoration: none; }
+.cv-video-thumb {
+  position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: 6px;
+  overflow: hidden; background: #eee;
+}
+.cv-video-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cv-video-thumb::after {
+  content: "▶"; position: absolute; inset: 0; display: flex;
+  align-items: center; justify-content: center; color: #fff; font-size: 0.8rem;
+  background: rgba(0, 0, 0, 0.18); transition: background .15s ease;
+}
+.cv-video-card:hover .cv-video-thumb::after { background: rgba(0, 0, 0, 0.32); }
+.cv-video-title {
+  margin-top: 5px; font-size: 0.72rem; line-height: 1.25; color: #3a3a3a;
+}
+.cv-video-card:hover .cv-video-title { color: #2a7ae2; }
+.cv-video-client { display: block; color: #b3b3b3; font-size: 0.68rem; margin-top: 1px; }
 @media (max-width: 600px) {
   .cv-head { flex-direction: column; gap: 2px; }
   .cv-stats { gap: 16px; }
@@ -224,6 +242,20 @@ A short history of where I've worked and what I built.
         </ul>
       </details>
       {%- endif -%}
+      <div class="cv-videos">
+        <a class="cv-video-card" href="https://www.youtube.com/watch?v=WvxhmEismCQ" target="_blank" rel="noopener">
+          <div class="cv-video-thumb"><img src="https://img.youtube.com/vi/WvxhmEismCQ/hqdefault.jpg" alt="MyPropty platform preview video thumbnail" loading="lazy"></div>
+          <div class="cv-video-title">MyPropty — Platform Preview</div>
+        </a>
+        <a class="cv-video-card" href="https://www.youtube.com/watch?v=7F8-GMygQk4" target="_blank" rel="noopener">
+          <div class="cv-video-thumb"><img src="https://img.youtube.com/vi/7F8-GMygQk4/hqdefault.jpg" alt="The Cloud technology consultant video thumbnail" loading="lazy"></div>
+          <div class="cv-video-title">The CLOUD — Technology Consultant<span class="cv-video-client">for Star Properties</span></div>
+        </a>
+        <a class="cv-video-card" href="https://www.youtube.com/watch?v=l5symo3xkcU" target="_blank" rel="noopener">
+          <div class="cv-video-thumb"><img src="https://img.youtube.com/vi/l5symo3xkcU/hqdefault.jpg" alt="The Cloud TV commercial video thumbnail" loading="lazy"></div>
+          <div class="cv-video-title">The CLOUD — TV Commercial<span class="cv-video-client">for Star Properties</span></div>
+        </a>
+      </div>
       <div class="cv-stack">Ruby on Rails · React · Postgres</div>
     </div>
   </div>
