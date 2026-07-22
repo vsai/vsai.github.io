@@ -200,6 +200,12 @@ A short history of where I've worked and what I built.
         </ul>
       </details>
       {%- endif -%}
+      <div class="cv-videos">
+        <a class="cv-video-card" href="https://www.youtube.com/watch?v=-2zP8ibCkvo" target="_blank" rel="noopener">
+          <div class="cv-video-thumb"><img src="https://img.youtube.com/vi/-2zP8ibCkvo/hqdefault.jpg" alt="BUIDL Vietnam 2023 panel discussion video thumbnail" loading="lazy"></div>
+          <div class="cv-video-title">Panel — BUIDL Vietnam 2023</div>
+        </a>
+      </div>
       <div class="cv-stack">
         TypeScript · Node.js · Solidity · Supabase · React
         <span class="cv-stack-light"><span class="label">Some exposure:</span> Rust (Solana)</span>
