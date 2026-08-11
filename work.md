@@ -120,6 +120,35 @@ A short history of where I've worked and what I built.
     <span class="cv-dot"></span>
     <div class="cv-card">
       <div class="cv-head">
+        <h3 class="cv-co"><a href="https://www.agentmanagerhq.com" target="_blank" rel="noopener">Agent Manager HQ</a></h3>
+        <span class="cv-dates">Jun 2026 — Present</span>
+      </div>
+      <div class="cv-role">Founder</div>
+      <p class="cv-lead">Helping medium-to-large businesses deploy always available, always within budget, and always recoverable fleets of AI agents.</p>
+      {%- assign agentmanagerhq_posts = site.posts | where: "company", "agentmanagerhq" -%}
+      {%- if agentmanagerhq_posts.size > 0 -%}
+      <details class="cv-writing" open>
+        <summary>Writing from this chapter <span class="cv-writing-count">{{ agentmanagerhq_posts.size }}</span></summary>
+        <ul class="cv-writing-list">
+          {%- for post in agentmanagerhq_posts -%}
+          <li><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
+          {%- endfor -%}
+        </ul>
+      </details>
+      {%- endif -%}
+      <div class="cv-videos">
+        <a class="cv-video-card" href="https://www.youtube.com/watch?v=5bn_Vfun-a8" target="_blank" rel="noopener">
+          <div class="cv-video-thumb"><img src="https://img.youtube.com/vi/5bn_Vfun-a8/hqdefault.jpg" alt="Agent Manager HQ demo video thumbnail" loading="lazy"></div>
+          <div class="cv-video-title">Demo — BUIDL Demo Day @ Google HK</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="cv-item">
+    <span class="cv-dot"></span>
+    <div class="cv-card">
+      <div class="cv-head">
         <h3 class="cv-co"><a href="https://bonkbot.io" target="_blank" rel="noopener">BONKbot</a></h3>
         <span class="cv-dates">Nov 2024 — Jun 2026</span>
       </div>
@@ -159,35 +188,6 @@ A short history of where I've worked and what I built.
       <div class="cv-stack">
         TypeScript · Node.js · Postgres · GCP · Claude&nbsp;Code · Codex
         <span class="cv-stack-light"><span class="label">Some exposure:</span> ClickHouse</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="cv-item">
-    <span class="cv-dot"></span>
-    <div class="cv-card">
-      <div class="cv-head">
-        <h3 class="cv-co"><a href="https://www.agentmanagerhq.com" target="_blank" rel="noopener">Agent Manager HQ</a></h3>
-        <span class="cv-dates">Jun 2026 — Present</span>
-      </div>
-      <div class="cv-role">Founder</div>
-      <p class="cv-lead">Helping medium-to-large businesses deploy always available, always within budget, and always recoverable fleets of AI agents.</p>
-      {%- assign agentmanagerhq_posts = site.posts | where: "company", "agentmanagerhq" -%}
-      {%- if agentmanagerhq_posts.size > 0 -%}
-      <details class="cv-writing" open>
-        <summary>Writing from this chapter <span class="cv-writing-count">{{ agentmanagerhq_posts.size }}</span></summary>
-        <ul class="cv-writing-list">
-          {%- for post in agentmanagerhq_posts -%}
-          <li><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
-          {%- endfor -%}
-        </ul>
-      </details>
-      {%- endif -%}
-      <div class="cv-videos">
-        <a class="cv-video-card" href="https://www.youtube.com/watch?v=5bn_Vfun-a8" target="_blank" rel="noopener">
-          <div class="cv-video-thumb"><img src="https://img.youtube.com/vi/5bn_Vfun-a8/hqdefault.jpg" alt="Agent Manager HQ demo video thumbnail" loading="lazy"></div>
-          <div class="cv-video-title">Demo — BUIDL Demo Day @ Google HK</div>
-        </a>
       </div>
     </div>
   </div>
