@@ -124,7 +124,7 @@ A short history of where I've worked and what I built.
         <span class="cv-dates">Jun 2026 — Present</span>
       </div>
       <div class="cv-role">Founder</div>
-      <p class="cv-lead">Helping medium-to-large businesses deploy always available, always within budget, and always recoverable fleets of AI agents.</p>
+      <p class="cv-lead">Helping medium-to-large businesses become AI-native with fleets of AI agents — always available, always within budget, always recoverable.</p>
       {%- assign agentmanagerhq_posts = site.posts | where: "company", "agentmanagerhq" -%}
       {%- if agentmanagerhq_posts.size > 0 -%}
       <details class="cv-writing" open>
