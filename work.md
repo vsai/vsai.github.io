@@ -285,6 +285,10 @@ A short history of where I've worked and what I built.
           <div class="cv-video-thumb"><img src="https://img.youtube.com/vi/bGBHvauf_dw/hqdefault.jpg" alt="Powering Real Estate through PropTech panel video thumbnail" loading="lazy"></div>
           <div class="cv-video-title">Panel — Powering Real Estate through PropTech<span class="cv-video-client">HK General Chamber of Commerce</span></div>
         </a>
+        <a class="cv-video-card" href="https://youtu.be/FK_TdOo5X_8?t=1539" target="_blank" rel="noopener">
+          <div class="cv-video-thumb"><img src="https://img.youtube.com/vi/FK_TdOo5X_8/hqdefault.jpg" alt="How technology is changing real estate panel video thumbnail" loading="lazy"></div>
+          <div class="cv-video-title">Panel — How Technology Is Changing Real Estate<span class="cv-video-client">PropTech Institute &amp; Xccelerate</span></div>
+        </a>
         <a class="cv-video-card" href="https://www.youtube.com/watch?v=WvxhmEismCQ" target="_blank" rel="noopener">
           <div class="cv-video-thumb"><img src="https://img.youtube.com/vi/WvxhmEismCQ/hqdefault.jpg" alt="MyPropty platform preview video thumbnail" loading="lazy"></div>
           <div class="cv-video-title">MyPropty — Platform Preview</div>
