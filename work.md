@@ -281,6 +281,10 @@ A short history of where I've worked and what I built.
       </details>
       {%- endif -%}
       <div class="cv-videos">
+        <a class="cv-video-card" href="https://youtu.be/bGBHvauf_dw?t=1401" target="_blank" rel="noopener">
+          <div class="cv-video-thumb"><img src="https://img.youtube.com/vi/bGBHvauf_dw/hqdefault.jpg" alt="Powering Real Estate through PropTech panel video thumbnail" loading="lazy"></div>
+          <div class="cv-video-title">Panel — Powering Real Estate through PropTech<span class="cv-video-client">HK General Chamber of Commerce</span></div>
+        </a>
         <a class="cv-video-card" href="https://www.youtube.com/watch?v=WvxhmEismCQ" target="_blank" rel="noopener">
           <div class="cv-video-thumb"><img src="https://img.youtube.com/vi/WvxhmEismCQ/hqdefault.jpg" alt="MyPropty platform preview video thumbnail" loading="lazy"></div>
           <div class="cv-video-title">MyPropty — Platform Preview</div>
