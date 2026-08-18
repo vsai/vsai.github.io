@@ -214,8 +214,10 @@ A short history of where I've worked and what I built.
         <span class="cv-topic">on-chain indexers</span>
       </div>
       <div class="cv-stats">
+        <span class="cv-stat"><b>~$600M</b> total volume</span>
         <span class="cv-stat"><b>~$45M</b> peak TVL</span>
         <span class="cv-stat"><b>0 → 1</b> built from scratch</span>
+        <span class="cv-stat"><b>0</b> security incidents</span>
       </div>
       <div class="cv-tags"><span class="cv-tag">Acquired by BONKbot</span></div>
       {%- assign cega_posts = site.posts | where: "company", "cega" -%}

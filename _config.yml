@@ -8,6 +8,7 @@ baseurl: ""
 
 twitter_username: vsai12
 github_username: vsai
+linkedin_username: vishalsaidaswani
 
 theme: minima
 show_excerpts: false
@@ -25,6 +26,7 @@ minima:
   social_links:
     twitter: vsai12
     github: vsai
+    linkedin: vishalsaidaswani
 
 author: Vishalsai Daswani
 
